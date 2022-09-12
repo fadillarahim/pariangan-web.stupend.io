@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+/*Untuk Navigation*/
+.inside-layer{
+    width: 100%;
+    padding-left: 5%;
+    height: fit-content;
+    
+}
+
+.navigation{
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    background-color: #E8EB6F;
+}
+
+.navigation .logo{
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.navigation .logo img{
+    vertical-align: middle;
+    width: 120px;
+}
+
+.navigation .menu{
+    float: right;
+    height: 60px;
+    max-width: 600px;
+    margin-right: 10%;
+}
+
+.navigation .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation .menu ul li{
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+    
+}
+
+.navigation ul li a{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover{
+    background-color: rgb(122, 123, 55, 1);
+    border-radius: 10px;
+    color: white;
+}
+
+
+.layar-penuh{
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+.opening{
+    position: relative;
+    top: 100px;
+    color: white;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.opening h3{
+    font-size: 45px;
+    font-weight: bold;
+    
+}
+
+.opening p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.opening button{
+    padding: 15px 25px 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #E8EB6F;
+}
+
+.opening button a{
+    color: black;
+}
+
+.opening button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+#about{
+    margin: 20px 20px 5% 20px;
+    text-align: center;
+}
+
+.flex-rincian{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 80%;
+    
+}
+
+.flex-content{
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 1;
+    background-color: #E8EB6F;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.flex-content p{
+    font-size: 15px;
+    margin-top: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+.flex-rincian img{
+    width: 200px;
+    border-radius: 100%;
+}
+
+#about .ringkasan{
+    margin: 5%;
+}
+
+#about .ringkasan p{
+    font-weight: 400;
+}
+
+.flex-content button{
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    background-color: rgb(122, 123, 55, 1);
+    border-radius: 30px;
+    color: white;
+}
+
+.flex-content button:hover{
+    background-color: white;
+    color: rgb(122, 123, 55, 1);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#about blockquote{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    color: #b1b1b1;
+}
+
+#about h2{
+    color: rgb(122, 123, 55, 1);
+    font-size: 40px;
+    line-height: 0.5;
+}
+
+#galeri{
+ 
+    width: 100%;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    
+}
+
+.flex-galeri{
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 1;
+    padding: 10px;
+}
+
+
+
+.flex-galeri img{
+    height: 200px;
+    border-radius: 5px;
+
+}
+
+.galeri1,
+.galeri2{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.flex-galeri img:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+#about-owner{
+
+    text-align: center;
+    margin-top: 30px;
+    width: 60%;
+    margin: 30px auto;
+}
+
+
+.profile-card{
+    background-color: #E8EB6F;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.profile-card .data-lainnya{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.profile-card figure h2{
+
+    font-size: 40px;
+    line-height: 0.5;
+}
+
+
+
+.profile-card table{
+    
+    font-size: 20px;  
+    margin: 0 auto;
+}
+
+
+footer{
+    background-color: rgb(122, 123, 55, 1);
+    color: white;
+}
+
+.layar-lapis{
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer .layar{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    border-top: 2px solid rgb(90, 86, 86);
+}
+
+.contact{
+    flex-basis: 25%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.contact button{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    
+}
+.contact button a{
+    color: black;
+}
+
+footer a{
+    text-decoration: none;
+    color: #E8EB6F;
+}
+
+.layer{
+    width: 1000px;
+    margin: auto;
+}
+
+
+.tombol-menu img{
+    width: 50px;
+}
+
+.tombol-menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 991.98px) {
+    .inside-layer{
+        width: 90%;
+    }
+
+    #about .flex-rincian{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu{
+        display: none;
+     
+    }
+
+    #galeri{
+        width: fit-content;
+        margin: 0 auto;
+
+
+        
+    }
+
+    .flex-galeri{
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+
+        
+    }
+    .galeri1,
+    .galeri2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+
+    
+    }
+
+
+    #galeri img{
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0 auto;
+        
+    }
+
+    #about-owner{
+
+        text-align: center;
+        margin-top: 30px;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .opening{
+        top: 20px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
